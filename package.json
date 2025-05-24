@@ -1,0 +1,47 @@
+{
+  "name": "my-v0-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "build:analyze": "ANALYZE=true npm run build",
+    "export": "next export",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "postbuild": "echo 'Build completed successfully'",
+    "netlify:build": "npm run build",
+    "netlify:dev": "netlify dev"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "@splinetool/react-spline": "4.0.0",
+    "@splinetool/runtime": "1.9.96",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "latest",
+    "howler": "^2.2.4",
+    "lucide-react": "^0.454.0",
+    "next": "15.2.4",
+    "next-themes": "^0.4.4",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.41.3",
+    "@types/howler": "^2.2.12",
+    "@types/node": "22.15.18",
+    "@types/react": "19.1.4",
+    "@types/react-dom": "19.1.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.8.3"
+  }
+}
